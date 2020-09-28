@@ -12,19 +12,19 @@ $ pip install tweepy
 * ssh 시작 <br> 
   $	sudo service ssh start
 
-* 주키퍼 시작 
+* 주키퍼 시작 <br>
   $ bin/zookeeper-server-start.sh config/zookeeper.properties
 
-* 카프카 시작 (ver 2.11)
+* 카프카 시작 (ver 2.11) <br>
   $ bin/kafka-server-start.sh config/server.properties
 
-* 토픽 생성 
+* 토픽 생성 <br>
   $ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic trump
 
-* 파이썬 파일 실행
+* 파이썬 파일 실행 <br>
   $ 파이썬 파일 경로/tweepy_kafka.py
 
 파이썬 파일을 실행하면 다음과 같이 콘솔창에서 어떤 데이터가 수집되는지를 볼 수 있다. 이 때, 가져오는 데이터 형식은 json이다. 
 
-* topic에서 어떤 데이터를 publish하고 있는지 확인하면 마찬가지로 가져오는 데이터 json 파일을 볼 수 있다. 
+* topic에서 어떤 데이터를 publish하고 있는지 확인하면 마찬가지로 가져오는 데이터 json 파일을 볼 수 있다. <br>
   $ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic trump --from-beginning
