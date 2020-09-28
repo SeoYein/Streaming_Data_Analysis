@@ -12,7 +12,7 @@ $ pip install tweepy
 * ssh 시작 <br> 
   $	sudo service ssh start
 
-* 주키퍼 시작 <br>
+* 주키퍼 시작(kafka 설치 경로로 들어가서 명령어 입력) <br> 
   $ bin/zookeeper-server-start.sh config/zookeeper.properties
 
 * 카프카 시작 (ver 2.11) <br>
