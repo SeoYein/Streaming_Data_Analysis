@@ -8,7 +8,7 @@ $ pip install python-twitter
 $ pip install tweepy
 *	tweepy 이용  (tweepy 3.6 버전 이하는 “RuntimeError: No active exception to reraised” 에러가 발생하기 때문에, 최신 버전을 이용하는지 확인한다. pip freeze를 입력하면 버전을 확인할 수 있다. 버전업이 필요한 경우 pip install --upgrade tweepy 를 입력한다.)
 
-### 시작 및 실행
+### tweepy로 kafka streaming 시작 및 실행
 * ssh 시작 <br> 
   $	sudo service ssh start
 
